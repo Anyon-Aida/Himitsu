@@ -1,0 +1,15 @@
+Adatbázis terv:
+users tábla tartalma regisztráció,belépés:
+	- id int(255)
+	- username varchar(30)
+	- pass varchar(30)
+	- email varchar(100)
+	- regDate datetime
+	- lastlogin date
+	- active int(20)
+chatmessages tábla tartalma fórum beszélgetések:
+	- id int(255)
+	- sendID int(20)
+	- recID int(20)
+	- date date
+	- msg text(utf8_hu)
