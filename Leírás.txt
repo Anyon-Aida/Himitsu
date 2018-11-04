@@ -1,0 +1,10 @@
+Himitsu (Honlap)
+
+
+Egy rpg játékhoz készítünk honlapot. A honlap tartalmazni fog egy Fõoldalt (kezdõlap), Karakterek, Történet, Letöltés illetve egy Fórum menüpontot is.
+A forumhoz illetve a letöltéshez egy regisztráció, bejelentkezés felületet készítünk
+Egy oldal tartalma: háttér, menü, rövid tartalom  , képek , bejelentkezés / regisztráció -s  ablak.
+Az oldalhoz html, php, css, javascript programnyelveket és photshop, notepad++ programokat használunk.
+
+A honlap a Himitsu legendája címû játékhoz készül. Különbözõ tartalmak, leírások lesznek megtalálhatóak rajta. A játék letöltéséhez, egy bejelentkezés szükséges, ha még nem rendelkezik valaki login fiókkal akkor regisztrálhat ugyan ott.
+A honlap célja, hogy egy letöltési felületet biztosítson a felhasználóknak, informálja a játékosokat a játékról (karakterekrõl) valamint egy forumon  keresztül meg tudják beszélni a tapasztalataikat.
