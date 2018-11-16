@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Regisztráció</title>
+<link rel="stylesheet" type="text/css" href="../css/regist.css">
+<link rel="icon" href="../images/icon/himitsu.ico" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="nav">
+	<ul>
+		<li><a href="../index.html">Főoldal</a></li>
+		<li><a href="sites/tortenet.html">Történet</a></li>
+		<li><a href="sites/letoltes.html">Karakterek</a></li>
+		<li><a href="sites/forum.html">Forum</a></li>
+		<li><a href="sites/forum.html">Letöltés</a></li>
+	</ul>
+</div>
+<div class="a">
+<font>Himitsu Legend Of History</font>
+</div>
+<div class="reg">
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Regisztráció</h1>
+    <p>Töltse ki a mezőket a regisztrációhoz.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="pelda@gmail.com" name="email" required>
+
+    <label for="psw"><b>Jelszó</b></label>
+    <input type="password" placeholder="Jelszó" name="psw" required>
+
+    <label for="psw-repeat"><b>Jelszó újra</b></label>
+    <input type="password" placeholder="Jelszó újra" name="psw-repeat" required>
+    
+   <!-- <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label> -->
+    
+   <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+    <div class="clearfix">
+      <button onclick="window.location.href='../Index.html'" type="button" class="cancelbtn">Mégse</button>
+      <button type="submit" class="signupbtn">Regisztrálás</button>
+    </div>
+  </div>
+  
+</form>
+</div>
+
+</body>
+<footer>
+<div id="footer">&copy; 2018 Himitsu . Minden jog fentatrva.</div>
+</footer>
+</html>
