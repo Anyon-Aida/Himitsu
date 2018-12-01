@@ -11,7 +11,7 @@
 	<ul>
 		<li><a href="index.html">Karakterek</a></li>
 		<li><a href="sites/tortenet.html">Történet</a></li>
-		<li><a href="sites/letoltes.html">Letöltés</a></li>
+		<li><a href="../letoltes/">Letöltés</a></li>
 		<li><a href="sites/forum.html">Forum</a></li>
 	</ul>
 </div>
