@@ -1,55 +1,34 @@
-/* A főoldal css file-ja */
-
-body {
-	background-image: url("../images/background/background_1.jpg");
+﻿body {
+	background-color: grey;
 }
 div.a {
     text-align: center;
 }
-.nav
-{
+.nav ul {
 	list-style: none;
-<<<<<<< HEAD
-	background: rgba(0, 0, 0, 0.5);
-=======
-	background: rgba(238, 21, 21, 0.66);
->>>>>>> master
+	background: #af1313;
 	text-align: center;
 	padding: 0;
-	margin: 700px;
+	margin: 300px;
 	margin-top: 0;
 	margin-bottom: 0;
-	list-style-type: none;
-    padding: 0;
-    overflow: hidden;
 }
-.nav a
-{
+.nav a{
 	text-decoration: none;
 	color: #FFFFFF;
-	width: 200px;
+	width: 100px;
 	display: block;
 	padding: 15px;
-	font-size: 20px;
+	font-size: 17px;
 	font-family:Helvetica;
-    text-align: center;
-    padding: 14px 16px;
-	transition: 0.7s;
 }
-.nav a:hover
-{
+.nav a:hover{
 	background: #BB0003;
 	transition: 0.8s;
 }
-.nav li 
-{
+.nav li {
 	display: inline-block;
-	float: center;
-}
-
-li a:hover:not(.active) 
-{
-    background-color: rgba(0, 0, 0, 0.7);
+	
 }
 	
 @font-face 
@@ -62,7 +41,33 @@ font
 	font-family: Kingdom Hearts Font;
 	font-size:96px;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
 div#clear{clear:both}
 footer {
 	position: fixed;
@@ -71,7 +76,7 @@ footer {
 	width: 100%;
 	margin: 0px auto;
 	font-size: 85%;
-	background: rgba(187,187,187,0.2);
+	background: rgb(89, 89, 89);
 	padding: 0px;
 	text-align: center;
 	color: white;
@@ -83,20 +88,13 @@ a{
 div#footer{
 	font-size: 15px;
 }
-div.b{
-	position: absolute;
-    right: 150px;
-    width: 200px;
-    height: 120px;
-}
-/* Bordered form */
+
+
 form {
     border: 3px solid #f1f1f1;
 }
-
-/* Full-width inputs */
 input[type=text], input[type=password] {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -104,37 +102,27 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button {
-    background-color: #000000;
+    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
-	transition: 0.7s;
 }
 
 button:hover {
     opacity: 0.8;
 }
 
-/* Extra styles for the cancel button */
+
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
 
-.regbtn{
-	margin-left:1300px;
-	width: auto;
-    padding: 10px 18px;
-    background-color: rgb(0, 147, 46);
-}
-
-/* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -142,7 +130,7 @@ button:hover {
 }
 
 img.avatar {
-    width: 20%;
+    width: 40%;
     border-radius: 50%;
 }
 
@@ -172,7 +160,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: rgba(249, 249, 249, 0.84);
+    background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -217,6 +205,82 @@ span.psw {
        float: none;
     }
     .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+div.reg{
+	height: 504px;
+    width: 50%;
+    background-color: #696969;
+	margin: auto;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
        width: 100%;
     }
 }

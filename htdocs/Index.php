@@ -55,6 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	}
 }
 
+<<<<<<< HEAD:Index.php
 //Regisztráció
 $name = $email = $pw = $pw2 = "";
 $nameerr = $emailerr = $pwerr = "";
@@ -126,6 +127,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 		}
 	}
 }
+=======
+>>>>>>> master:htdocs/Index.php
 ?>
 <ul class="nav">
 	<li><a href="index.html">Karakterek</a></li>
