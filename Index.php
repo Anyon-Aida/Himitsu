@@ -3,7 +3,6 @@
 <title>Főoldal</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="icon" href="images/icon/himitsu.ico" type="image/x-icon"/>
-<link rel="stylesheet" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -37,8 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 					$res = mysqli_fetch_assoc($res);
 					$id = $res["id"];
 					if($id > 0){
-						setcookie("userid",$id,time() + 3600,"/");
-						header("Location:php/main.php");
+						header("Location:php/main.php?id=$id");
 						exit();
 					} else {
 						$err = "badID";
@@ -129,21 +127,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	}
 }
 ?>
-<div class="nav">
-	<ul>
-		<li><a href="index.html">Karakterek</a></li>
-		<li><a href="sites/tortenet.html">Történet</a></li>
-		<li><a href="sites/letoltes.html">Letöltés</a></li>
-		<li><a href="sites/forum.html">Forum</a></li>
-	</ul>
-</div>
+<ul class="nav">
+	<li><a href="index.html">Karakterek</a></li>
+	<li><a href="sites/tortenet.html">Történet</a></li>
+	<li><a href="sites/letoltes.html">Letöltés</a></li>
+	<li><a href="sites/forum.html">Forum</a></li>
+</ul>
 <div class="a">
 <font>Himitsu Legend Of History</font>
 </div>
 <div class="b">
 	<div class="login">
 
-	<button onclick="loginBtnClicked()" style="width:auto; background-color: transparent; margin-right: 100px;" > <img src="images/icon/himitsubeje.png"> </button>
+	<button onclick="loginBtnClicked()" style="width:auto; background-color: transparent;" > <img src="images/icon/himitsubeje.png"> </button>
 
 		<div id="id01" class="modal">
 		  <form class="modal-content animate" method="post" action="Index.php">
